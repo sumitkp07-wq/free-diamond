@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waves Free Diamonds - Instant Claim</title>
+  <title>Free Diamond Apk - Instant Claim</title>
   <style>
     * {
       box-sizing: border-box;
@@ -153,7 +153,7 @@
       gap: 4px;
     }
 
-    /* Step 1 & Step 2 Indicator */
+    /* Step Indicator */
     .step-indicator {
       display: flex;
       align-items: center;
@@ -217,24 +217,18 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
     .diamond-icon-box {
-      width: 60px;
-      height: 60px;
+      width: 62px;
+      height: 62px;
       border-radius: 14px;
-      background: radial-gradient(circle, #1e3a8a 0%, #090e1a 100%);
       border: 1.5px solid #38bdf8;
       box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      object-fit: cover;
       flex-shrink: 0;
-    }
-    .diamond-icon-box svg {
-      width: 36px;
-      height: 36px;
-      filter: drop-shadow(0 0 8px #38bdf8);
+      background: #000;
     }
     .app-info {
       flex: 1;
+      min-width: 0;
     }
     .app-tags {
       display: flex;
@@ -263,6 +257,9 @@
       font-weight: 800;
       color: #ffffff;
       margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .app-sub {
       font-size: 11px;
@@ -375,10 +372,10 @@
         <div class="live-dot"></div>
         LIVE SERVER
       </div>
-      <div class="badge-users" id="liveWatchingBadge">1,742 watching</div>
+      <div class="badge-users" id="liveWatchingBadge">1,750 watching</div>
     </div>
 
-    <h1>Waves Free Diamonds</h1>
+    <h1>Free Diamond Apk</h1>
     <p class="subtitle">Complete the step below to unlock unlimited Diamonds & Redeem Codes</p>
 
     <!-- STEP 1: Video Guide -->
@@ -407,29 +404,18 @@
       💎 GET DIAMONDS NOW
     </a>
     <div class="claim-stat">
-      <span id="claimCount">10,468</span> claims in last hour • Unlimited Claim No Ban
+      <span id="claimCount">10,473</span> claims in last hour • Unlimited Claim No Ban
     </div>
 
-    <!-- Free Fire Diamond Info Card -->
+    <!-- Free Diamond APK Info Card -->
     <div class="app-card">
-      <div class="diamond-icon-box">
-        <!-- SVG Diamond Icon -->
-        <svg viewBox="0 0 24 24">
-          <defs>
-            <linearGradient id="diamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#38bdf8"/>
-              <stop offset="100%" stop-color="#2563eb"/>
-            </linearGradient>
-          </defs>
-          <path fill="url(#diamGrad)" d="M12 2L3 9l9 13 9-13-9-7zm0 2.8L17.4 9H6.6L12 4.8zM5.5 10.5h4.1L12 17.5 5.5 10.5zm8.9 0h4.1L12 17.5l2.4-7z"/>
-        </svg>
-      </div>
+      <img src="diamond.jpg" alt="Free Diamond Apk" class="diamond-icon-box" onerror="this.src='diamond.png'">
       <div class="app-info">
         <div class="app-tags">
           <span class="badge-tag trending">TRENDING</span>
           <span class="badge-tag verified">VERIFIED</span>
         </div>
-        <div class="app-title">WAVES FREE DIAMONDS</div>
+        <div class="app-title">FREE DIAMOND APK</div>
         <div class="app-sub">Free Fire Diamonds • 100% Anti-Ban</div>
         <div class="app-rating">★★★★★ 4.9 (1.2M Claims)</div>
       </div>
@@ -441,7 +427,7 @@
         <div class="comments-title">
           <span style="color:#ef4444;">●</span> Live Comments
         </div>
-        <div class="comments-watching" id="commentWatchingCount">1,735 watching</div>
+        <div class="comments-watching" id="commentWatchingCount">1,750 watching</div>
       </div>
 
       <div class="comment-list" id="commentBox">
@@ -452,7 +438,6 @@
   </div>
 
   <script>
-    // Authentic Comments Pool
     const fakeComments = [
       { user: "AbhishekInd8", text: "bhai sach me 1060 diamond mil gaye thanks! 🔥💎", avatar: "A" },
       { user: "KaranMax62", text: "5 min me mil gaya, mast jaldi claim karo sab log 🚀", avatar: "K" },
@@ -484,10 +469,8 @@
         </div>
       `;
 
-      // Top par insert karo
       commentBox.insertBefore(commentDiv, commentBox.firstChild);
 
-      // Max 4 comments dikhao baaki remove karo smooth scrolling ke liye
       if (commentBox.children.length > 4) {
         commentBox.removeChild(commentBox.lastChild);
       }
@@ -495,22 +478,18 @@
       commentIndex = (commentIndex + 1) % fakeComments.length;
     }
 
-    // Initial 3 comments load
     for(let i = 0; i < 3; i++) {
       addComment();
     }
 
-    // Har 3 second me naya real-like comment drop hoga
     setInterval(addComment, 3200);
 
-    // Live counter randomness (fluctuation)
     setInterval(() => {
-      const count = Math.floor(Math.random() * (1760 - 1720 + 1)) + 1720;
+      const count = Math.floor(Math.random() * (1770 - 1730 + 1)) + 1730;
       document.getElementById("liveWatchingBadge").innerText = count.toLocaleString() + " watching";
       document.getElementById("commentWatchingCount").innerText = count.toLocaleString() + " watching";
     }, 4500);
 
-    // Dynamic Claims Counter
     setInterval(() => {
       const current = parseInt(document.getElementById("claimCount").innerText.replace(/,/g, ''));
       document.getElementById("claimCount").innerText = (current + 1).toLocaleString();
