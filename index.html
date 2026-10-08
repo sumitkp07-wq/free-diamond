@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Diamond Redeem Codes Unlimited</title>
+  <title>Waves Free Diamonds - Instant Claim</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,290 +12,510 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
     body {
-      background-color: #050b14;
+      background-color: #060913;
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.28) 0%, transparent 45%),
-        radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.3) 0%, transparent 50%);
+        radial-gradient(circle at 10% 10%, rgba(220, 38, 38, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, rgba(37, 99, 235, 0.3) 0%, transparent 45%);
       background-attachment: fixed;
       color: #ffffff;
       display: flex;
       justify-content: center;
-      padding: 24px 16px 40px;
+      padding: 16px 12px 40px;
     }
     .wrapper {
       width: 100%;
-      max-width: 420px;
+      max-width: 440px;
       text-align: center;
     }
-    .header-top {
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      color: #ffffff;
-      margin-bottom: 2px;
-    }
-    .header-sub {
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: #94a3b8;
+    
+    /* Top Bar */
+    .top-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 12px;
+      padding: 0 4px;
     }
-    .pill-badge {
+    .badge-live {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.8px;
-      color: #10b981;
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      padding: 6px 14px;
+      color: #ef4444;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      padding: 5px 12px;
       border-radius: 20px;
-      margin-bottom: 18px;
+      letter-spacing: 0.5px;
     }
-    .dot {
-      width: 6px;
-      height: 6px;
-      background: #10b981;
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      background: #ef4444;
       border-radius: 50%;
-      box-shadow: 0 0 8px #10b981;
+      box-shadow: 0 0 8px #ef4444;
+      animation: pulse 1.5s infinite;
     }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .badge-users {
+      font-size: 11px;
+      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    /* Main Title */
     h1 {
-      font-size: 28px;
-      line-height: 1.2;
+      font-size: 22px;
       font-weight: 800;
-      margin-bottom: 8px;
-      background: linear-gradient(180deg, #ffffff 20%, #34d399 70%, #06b6d4 100%);
+      background: linear-gradient(135deg, #ff4d4d 0%, #ffffff 50%, #38bdf8 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-    .tagline {
-      font-size: 12px;
+    .subtitle {
+      font-size: 11px;
       color: #94a3b8;
-      margin-bottom: 20px;
-      line-height: 1.4;
-      padding: 0 10px;
+      margin-bottom: 14px;
     }
 
-    /* Video Frame - Green & Blue/Cyan Border Glow */
-    .video-container {
+    /* Video Player Box */
+    .video-card {
       position: relative;
-      border-radius: 18px;
-      padding: 2px;
-      background: linear-gradient(135deg, #10b981, #06b6d4);
-      box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
-      margin-bottom: 24px;
-    }
-    .video-inner {
-      background: #000000;
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-    }
-    video {
       width: 100%;
-      display: block;
       border-radius: 16px;
-    }
-
-    /* App Box */
-    .app-card {
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(16, 185, 129, 0.2);
-      border-radius: 22px;
-      padding: 20px 16px;
-      text-align: left;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    }
-    .app-info {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 25px rgba(220, 38, 38, 0.25);
+      overflow: hidden;
+      margin-bottom: 14px;
+      aspect-ratio: 16 / 9;
       display: flex;
       align-items: center;
-      gap: 14px;
-      margin-bottom: 12px;
+      justify-content: center;
     }
-    
-    /* Diamond App Icon */
-    .app-icon {
-      width: 62px;
-      height: 62px;
-      border-radius: 16px;
-      background: radial-gradient(circle, #0e2a3a 0%, #05131e 100%);
-      border: 2px solid #06b6d4;
-      box-shadow: 0 0 14px rgba(6, 182, 212, 0.45);
+    .video-placeholder {
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
-      padding: 4px;
+      background: radial-gradient(circle at center, #1e293b 0%, #060913 100%);
+      position: relative;
     }
-    .app-icon svg {
-      width: 28px;
-      height: 28px;
-      fill: #38bdf8;
-      filter: drop-shadow(0 0 5px #06b6d4);
+    .video-play-btn {
+      width: 54px;
+      height: 54px;
+      background: rgba(239, 68, 68, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+      cursor: pointer;
+      margin-bottom: 8px;
     }
-    .app-icon span {
-      font-size: 8px;
-      font-weight: 800;
-      color: #34d399;
-      margin-top: 2px;
+    .video-play-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: #ffffff;
+      margin-left: 3px;
+    }
+    .video-tagline {
+      font-size: 11px;
+      font-weight: 600;
+      color: #f1f5f9;
       letter-spacing: 0.5px;
     }
-
-    .app-meta h2 {
-      font-size: 18px;
+    .video-live-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 9px;
       font-weight: 800;
-      color: #ffffff;
-      line-height: 1.2;
-    }
-    .app-meta p {
-      font-size: 11px;
-      color: #94a3b8;
-      margin-top: 3px;
-    }
-    .stars-row {
+      padding: 3px 8px;
+      border-radius: 6px;
       display: flex;
       align-items: center;
-      gap: 6px;
-      margin-top: 4px;
-    }
-    .stars {
-      color: #34d399;
-      font-size: 10px;
-      letter-spacing: 2px;
-    }
-    .rating-label {
-      font-size: 10px;
-      color: #94a3b8;
+      gap: 4px;
     }
 
-    /* Feature Tags */
-    .badge-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin: 16px 0;
-    }
-    .feature-tag {
-      background: rgba(30, 41, 59, 0.65);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 12px;
-      padding: 8px 10px;
+    /* Step 1 & Step 2 Indicator */
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 4px 6px;
       font-size: 11px;
+      font-weight: 700;
       color: #cbd5e1;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .step-tag {
+      color: #38bdf8;
     }
 
-    /* Install Button */
-    .btn-install {
+    /* Big Claim Button */
+    .btn-claim {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
       width: 100%;
-      text-decoration: none;
-      background: linear-gradient(90deg, #10b981, #06b6d4);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 17px;
-      padding: 15px 0;
+      padding: 16px;
       border-radius: 14px;
-      margin-top: 6px;
-      box-shadow: 0 4px 22px rgba(16, 185, 129, 0.35);
+      background: linear-gradient(90deg, #ef4444 0%, #3b82f6 100%);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 25px rgba(59, 130, 246, 0.45);
       transition: transform 0.1s ease;
+      margin-bottom: 6px;
     }
-    .btn-install:active {
-      transform: scale(0.98);
+    .btn-claim:active {
+      transform: scale(0.97);
     }
-    .btn-install svg {
-      width: 20px;
-      height: 20px;
+    .claim-stat {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-bottom: 14px;
     }
-    .redirect-text {
-      font-size: 10px;
+    .claim-stat span {
+      color: #34d399;
+      font-weight: 700;
+    }
+
+    /* Product Details Card */
+    .app-card {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .diamond-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      background: radial-gradient(circle, #1e3a8a 0%, #090e1a 100%);
+      border: 1.5px solid #38bdf8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .diamond-icon-box svg {
+      width: 36px;
+      height: 36px;
+      filter: drop-shadow(0 0 8px #38bdf8);
+    }
+    .app-info {
+      flex: 1;
+    }
+    .app-tags {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .badge-tag {
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .badge-tag.trending {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .badge-tag.verified {
+      background: rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+    .app-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .app-sub {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .app-rating {
+      font-size: 11px;
+      color: #f59e0b;
+      margin-top: 3px;
+      font-weight: 700;
+    }
+
+    /* Live Comments Container */
+    .comments-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 14px;
+      text-align: left;
+    }
+    .comments-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+    .comments-title {
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #f1f5f9;
+    }
+    .comments-watching {
+      font-size: 11px;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 240px;
+      overflow: hidden;
+      position: relative;
+    }
+    .comment-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 8px 10px;
+      border-radius: 10px;
+      animation: slideDown 0.4s ease-out;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    @keyframes slideDown {
+      0% { opacity: 0; transform: translateY(-12px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .comment-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ef4444, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .comment-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .comment-user-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .comment-username {
+      font-size: 12px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+    .comment-time {
+      font-size: 9px;
       color: #64748b;
-      text-align: center;
-      margin-top: 10px;
     }
-    .footer-note {
-      font-size: 10px;
-      color: #475569;
-      text-align: center;
-      margin-top: 24px;
+    .comment-text {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.3;
     }
   </style>
 </head>
 <body>
 
   <div class="wrapper">
-    <div class="header-top">FREE FIRE COMMUNITY</div>
-    <div class="header-sub">EXCLUSIVE REWARDS CENTER</div>
-    
-    <div class="pill-badge">
-      <div class="dot"></div>
-      ACTIVE REDEEM SERVER
+
+    <!-- Top Live Stats -->
+    <div class="top-status-bar">
+      <div class="badge-live">
+        <div class="live-dot"></div>
+        LIVE SERVER
+      </div>
+      <div class="badge-users" id="liveWatchingBadge">1,742 watching</div>
     </div>
 
-    <!-- Heading -->
-    <h1>Free Diamond<br>Redeem Codes Unlimited</h1>
-    <p class="tagline">Watch the full video tutorial to unlock unlimited server diamonds.</p>
+    <h1>Waves Free Diamonds</h1>
+    <p class="subtitle">Complete the step below to unlock unlimited Diamonds & Redeem Codes</p>
 
-    <!-- Video Box (Demo Link Attached) -->
-    <div class="video-container">
-      <div class="video-inner">
-        <video controls playsinline preload="metadata">
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          Your browser does not support video.
-        </video>
+    <!-- STEP 1: Video Guide -->
+    <div class="step-indicator">
+      <span>STEP 01 — WATCH GUIDE</span>
+      <span class="step-tag">REQUIRED</span>
+    </div>
+
+    <div class="video-card">
+      <div class="video-placeholder">
+        <div class="video-live-tag">🔴 TUTORIAL</div>
+        <div class="video-play-btn" onclick="alert('Watch the full step in video or tap Claim below!')">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-tagline">WATCH FULL VIDEO TO UNLOCK</div>
       </div>
     </div>
 
-    <!-- App Box -->
+    <!-- STEP 2: Main Claim Action -->
+    <div class="step-indicator">
+      <span>STEP 02 — CLAIM REWARD</span>
+      <span class="step-tag">INSTANT</span>
+    </div>
+
+    <a href="https://terasharefile.com/s/1FO7nqwHBTYH5SxdCp8T2Cw" class="btn-claim">
+      💎 GET DIAMONDS NOW
+    </a>
+    <div class="claim-stat">
+      <span id="claimCount">10,468</span> claims in last hour • Unlimited Claim No Ban
+    </div>
+
+    <!-- Free Fire Diamond Info Card -->
     <div class="app-card">
+      <div class="diamond-icon-box">
+        <!-- SVG Diamond Icon -->
+        <svg viewBox="0 0 24 24">
+          <defs>
+            <linearGradient id="diamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#2563eb"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#diamGrad)" d="M12 2L3 9l9 13 9-13-9-7zm0 2.8L17.4 9H6.6L12 4.8zM5.5 10.5h4.1L12 17.5 5.5 10.5zm8.9 0h4.1L12 17.5l2.4-7z"/>
+        </svg>
+      </div>
       <div class="app-info">
-        <!-- Diamond Logo Box -->
-        <div class="app-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2L3 9l9 13 9-13-9-7zm0 2.84L17.36 9H6.64L12 4.84zM5.38 10.5h4.16L12 17.58 5.38 10.5zm6.62 7.08l2.46-7.08h4.16L12 17.58z"/>
-          </svg>
-          <span>DIAMOND</span>
+        <div class="app-tags">
+          <span class="badge-tag trending">TRENDING</span>
+          <span class="badge-tag verified">VERIFIED</span>
         </div>
-        <div class="app-meta">
-          <h2>FREE DIAMOND APK</h2>
-          <p>Instant Server Generator v4.2</p>
-          <div class="stars-row">
-            <span class="stars">★★★★★</span>
-            <span class="rating-label">100% Working</span>
-          </div>
-        </div>
+        <div class="app-title">WAVES FREE DIAMONDS</div>
+        <div class="app-sub">Free Fire Diamonds • 100% Anti-Ban</div>
+        <div class="app-rating">★★★★★ 4.9 (1.2M Claims)</div>
       </div>
-
-      <!-- Feature Tags -->
-      <div class="badge-grid">
-        <div class="feature-tag">💎 10000+ Diamonds</div>
-        <div class="feature-tag">⚡ Instant Transfer</div>
-        <div class="feature-tag">🛡️ Anti-Ban Secure</div>
-        <div class="feature-tag">📱 All Devices</div>
-      </div>
-
-      <!-- Download Button (Demo Link Attached) -->
-      <a href="https://google.com" class="btn-install">
-        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-        Download APK Now
-      </a>
-
-      <div class="redirect-text">You'll be redirected to the secure download server.</div>
     </div>
 
-    <div class="footer-note">Community-made page • Not affiliated with Garena</div>
+    <!-- Live Dynamic Comments -->
+    <div class="comments-card">
+      <div class="comments-header">
+        <div class="comments-title">
+          <span style="color:#ef4444;">●</span> Live Comments
+        </div>
+        <div class="comments-watching" id="commentWatchingCount">1,735 watching</div>
+      </div>
+
+      <div class="comment-list" id="commentBox">
+        <!-- Javascript dynamic inject karega -->
+      </div>
+    </div>
+
   </div>
+
+  <script>
+    // Authentic Comments Pool
+    const fakeComments = [
+      { user: "AbhishekInd8", text: "bhai sach me 1060 diamond mil gaye thanks! 🔥💎", avatar: "A" },
+      { user: "KaranMax62", text: "5 min me mil gaya, mast jaldi claim karo sab log 🚀", avatar: "K" },
+      { user: "Rahul_Gamer_ff", text: "Bhai mera claim ho gaya code mil gaya inbox me 😍", avatar: "R" },
+      { user: "Sameer_Khan_99", text: "Maine step 2 pe tap kiya turant 2180 diamonds add ho gaye!", avatar: "S" },
+      { user: "Aman_Bhai_OP", text: "Bhai no ban trick hai pura genuine laga mujhe ✅", avatar: "A" },
+      { user: "Deepak_Pro_ff", text: "Maine 2 baar redeem kiya dono baar code working tha 🥶", avatar: "D" },
+      { user: "Vikas_Rathore", text: "Abe jaldi karo link expire hone se pehle claim maro sab", avatar: "V" },
+      { user: "Rohit_Sharma_07", text: "Thanks bhai video dekh ke kiya turant ho gaya ❤️", avatar: "R" },
+      { user: "Lucky_Player", text: "Mere dost ko bhi 1000 diamonds mil gaye abhi just 🎮", avatar: "L" },
+      { user: "Pooja_Sharma", text: "Mera pehli baar kisi link se claim hua hai thank uuu! 🥰", avatar: "P" }
+    ];
+
+    let commentIndex = 0;
+    const commentBox = document.getElementById("commentBox");
+
+    function addComment() {
+      const item = fakeComments[commentIndex];
+      const commentDiv = document.createElement("div");
+      commentDiv.className = "comment-item";
+      commentDiv.innerHTML = `
+        <div class="comment-avatar">${item.avatar}</div>
+        <div class="comment-content">
+          <div class="comment-user-line">
+            <span class="comment-username">${item.user}</span>
+            <span class="comment-time">just now</span>
+          </div>
+          <div class="comment-text">${item.text}</div>
+        </div>
+      `;
+
+      // Top par insert karo
+      commentBox.insertBefore(commentDiv, commentBox.firstChild);
+
+      // Max 4 comments dikhao baaki remove karo smooth scrolling ke liye
+      if (commentBox.children.length > 4) {
+        commentBox.removeChild(commentBox.lastChild);
+      }
+
+      commentIndex = (commentIndex + 1) % fakeComments.length;
+    }
+
+    // Initial 3 comments load
+    for(let i = 0; i < 3; i++) {
+      addComment();
+    }
+
+    // Har 3 second me naya real-like comment drop hoga
+    setInterval(addComment, 3200);
+
+    // Live counter randomness (fluctuation)
+    setInterval(() => {
+      const count = Math.floor(Math.random() * (1760 - 1720 + 1)) + 1720;
+      document.getElementById("liveWatchingBadge").innerText = count.toLocaleString() + " watching";
+      document.getElementById("commentWatchingCount").innerText = count.toLocaleString() + " watching";
+    }, 4500);
+
+    // Dynamic Claims Counter
+    setInterval(() => {
+      const current = parseInt(document.getElementById("claimCount").innerText.replace(/,/g, ''));
+      document.getElementById("claimCount").innerText = (current + 1).toLocaleString();
+    }, 6000);
+  </script>
 
 </body>
 </html>
