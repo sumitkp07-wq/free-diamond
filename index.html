@@ -94,8 +94,8 @@
       position: relative;
       width: 100%;
       border-radius: 16px;
-      background: #0f172a;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #000000;
+      border: 1.5px solid rgba(239, 68, 68, 0.4);
       box-shadow: 0 0 25px rgba(220, 38, 38, 0.25);
       overflow: hidden;
       margin-bottom: 14px;
@@ -104,53 +104,12 @@
       align-items: center;
       justify-content: center;
     }
-    .video-placeholder {
+    .video-card video {
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at center, #1e293b 0%, #060913 100%);
-      position: relative;
-    }
-    .video-play-btn {
-      width: 54px;
-      height: 54px;
-      background: rgba(239, 68, 68, 0.9);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
-      cursor: pointer;
-      margin-bottom: 8px;
-    }
-    .video-play-btn svg {
-      width: 22px;
-      height: 22px;
-      fill: #ffffff;
-      margin-left: 3px;
-    }
-    .video-tagline {
-      font-size: 11px;
-      font-weight: 600;
-      color: #f1f5f9;
-      letter-spacing: 0.5px;
-    }
-    .video-live-tag {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: #ef4444;
-      color: #fff;
-      font-size: 9px;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
     }
 
     /* Step Indicator */
@@ -372,7 +331,7 @@
         <div class="live-dot"></div>
         LIVE SERVER
       </div>
-      <div class="badge-users" id="liveWatchingBadge">1,750 watching</div>
+      <div class="badge-users" id="liveWatchingBadge">1,766 watching</div>
     </div>
 
     <h1>Free Diamond Apk</h1>
@@ -384,14 +343,9 @@
       <span class="step-tag">REQUIRED</span>
     </div>
 
+    <!-- Video with Controls & Unmute on Play -->
     <div class="video-card">
-      <div class="video-placeholder">
-        <div class="video-live-tag">🔴 TUTORIAL</div>
-        <div class="video-play-btn" onclick="alert('Watch the full step in video or tap Claim below!')">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-        <div class="video-tagline">WATCH FULL VIDEO TO UNLOCK</div>
-      </div>
+      <video id="tutorialVid" src="tutorial.mp4" controls playsinline preload="metadata"></video>
     </div>
 
     <!-- STEP 2: Main Claim Action -->
@@ -404,7 +358,7 @@
       💎 GET DIAMONDS NOW
     </a>
     <div class="claim-stat">
-      <span id="claimCount">10,473</span> claims in last hour • Unlimited Claim No Ban
+      <span id="claimCount">10,474</span> claims in last hour • Unlimited Claim No Ban
     </div>
 
     <!-- Free Diamond APK Info Card -->
@@ -427,23 +381,32 @@
         <div class="comments-title">
           <span style="color:#ef4444;">●</span> Live Comments
         </div>
-        <div class="comments-watching" id="commentWatchingCount">1,750 watching</div>
+        <div class="comments-watching" id="commentWatchingCount">1,766 watching</div>
       </div>
 
       <div class="comment-list" id="commentBox">
-        <!-- Javascript dynamic inject karega -->
+        <!-- JS Injects Live Comments -->
       </div>
     </div>
 
   </div>
 
   <script>
+    // Audio Unmute Script on Play
+    const v = document.getElementById("tutorialVid");
+    if (v) {
+      v.addEventListener("play", () => {
+        v.muted = false;
+        v.volume = 1.0;
+      });
+    }
+
     const fakeComments = [
+      { user: "Aman_Bhai_OP", text: "Bhai no ban trick hai pura genuine laga mujhe ✅", avatar: "A" },
       { user: "AbhishekInd8", text: "bhai sach me 1060 diamond mil gaye thanks! 🔥💎", avatar: "A" },
       { user: "KaranMax62", text: "5 min me mil gaya, mast jaldi claim karo sab log 🚀", avatar: "K" },
       { user: "Rahul_Gamer_ff", text: "Bhai mera claim ho gaya code mil gaya inbox me 😍", avatar: "R" },
       { user: "Sameer_Khan_99", text: "Maine step 2 pe tap kiya turant 2180 diamonds add ho gaye!", avatar: "S" },
-      { user: "Aman_Bhai_OP", text: "Bhai no ban trick hai pura genuine laga mujhe ✅", avatar: "A" },
       { user: "Deepak_Pro_ff", text: "Maine 2 baar redeem kiya dono baar code working tha 🥶", avatar: "D" },
       { user: "Vikas_Rathore", text: "Abe jaldi karo link expire hone se pehle claim maro sab", avatar: "V" },
       { user: "Rohit_Sharma_07", text: "Thanks bhai video dekh ke kiya turant ho gaya ❤️", avatar: "R" },
@@ -485,7 +448,7 @@
     setInterval(addComment, 3200);
 
     setInterval(() => {
-      const count = Math.floor(Math.random() * (1770 - 1730 + 1)) + 1730;
+      const count = Math.floor(Math.random() * (1780 - 1740 + 1)) + 1740;
       document.getElementById("liveWatchingBadge").innerText = count.toLocaleString() + " watching";
       document.getElementById("commentWatchingCount").innerText = count.toLocaleString() + " watching";
     }, 4500);
